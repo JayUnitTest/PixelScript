@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', cursive;
+}
+
+:root{
+--font-family: 'Press Start 2P', cursive;
+--color_background: #004643;
+--color_headline: #fffffe;
+--color_text: #abd1c6;
+--color_button: #f9bc60;
+--button_text: #001e1d;
+}
+
+body{
+    background: #004643 !important;
+}
+
+
+.wrapper{
+    text-align: center;
+    padding:20px;
+    color: var(--color_text);
+    text-shadow: 0px 4px 4px rgba(66,173,156,0.72);
+}
+
+.main-panel{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+    background: var(--color_button);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.5);
+    padding: 20px;
+}
+
+.slider{
+  
+}
+
+.slider #activeinactive{
+    display: inline-block;
+    margin-left: 150px;
+}
+
+.slider #create-button{
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+#grid-btn{
+    padding: 5px 20px;
+    margin-top: 20px;
+}
+
+.controls-wrapper{
+    display:flex;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.controls-wrapper input[type="color"]{
+    background-color: transparent;
+    appearance: none;
+    width: 70px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+span{
+    position: relative;
+}
+

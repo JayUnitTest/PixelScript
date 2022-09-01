@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Jay Singh">
+    <meta name="description" content="This is a pixel art app in which you're free to let  loose and draw all the pixel art you desire!">
+    <link rel="stylesheet" href="styles.css">
+    <title>Pixel-Script</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="header">
+        <h1>Pixel-Script</h1>
+        <p>Ready to create some pixel art? get drawing below!</p>
+    </div>
+    </div>
+    <div class="main-panel">
+        <div class="controls">
+            <div class="controls-wrapper">
+                <div class="slider">
+                    <label for="width-range">Width</label>
+                    <input type="range" id="width-range" min="1" max="50" id="range-slider">
+                    <span id="width-value">0</span>
+                    <label for="length-range">Length</label>
+                    <input type="range" id="length-range" min="1" max="50" id="range-slider">
+                    <span id="width-value">0</span>
+                    <button id="create-button" onclick="createCanvas()">Create</button>
+                    <span id="activeinactive">Grid Lines: <button id="grid-btn" class="btn-on">ON</button></span>
+                </div>
+            </div>
+            <div class="controls-wrapper">
+                <div class="color-picker">
+                    <label for="color-picker">Color</label>
+                    <input type="color" id="color-picker" value="#000000" oninput="updateColor(this.value)">
+                </div>
+                <button id="clear-button" onclick="clearCanvas()">Clear</button>
+                <button id="paint-btn" onclick="paint()">paint</button>
+                <button id="eraser-btn" onclick="eraser()">Eraser</button>
+            </div>
+        </div>
+    </div>
+    <div class="canvas-container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
