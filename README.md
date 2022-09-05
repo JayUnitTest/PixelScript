@@ -18,5 +18,5 @@ A project i have undertaken to practice my javascript abilities.
 - Export art (in progress)
 
 ## Current progress 
-
+![alt text](https://gyazo.com/d2596ceac7346b67f5e900dbd41163e6)
 
