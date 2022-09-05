@@ -22,11 +22,11 @@
                 <div class="slider">
                     <label for="width-range">Width</label>
                     <input type="range" id="width-range" min="1" max="50" id="range-slider">
-                    <span id="width-value">0</span>
-                    <label for="length-range">Length</label>
-                    <input type="range" id="length-range" min="1" max="50" id="range-slider">
-                    <span id="width-value">0</span>
-                    <button id="create-button" onclick="createCanvas()">Create</button>
+                    <span id="width-value">15</span>
+                    <label for="height-range">Height</label>
+                    <input type="range" id="height-range" min="1" max="50" id="range-slider">
+                    <span id="height-value">15</span>
+                    <button id="create-button">Create</button>
                     <span id="activeinactive">Grid Lines: <button id="grid-btn" class="btn-on">ON</button></span>
                 </div>
             </div>
@@ -35,13 +35,14 @@
                     <label for="color-picker">Color</label>
                     <input type="color" id="color-picker" value="#000000" oninput="updateColor(this.value)">
                 </div>
-                <button id="clear-button" onclick="clearCanvas()">Clear</button>
-                <button id="paint-btn" onclick="paint()">paint</button>
-                <button id="eraser-btn" onclick="eraser()">Eraser</button>
+                <button id="clear-button">Clear</button>
+                <button id="paint-btn">paint</button>
+                <button id="eraser-btn">Eraser</button>
             </div>
         </div>
     </div>
-    <div class="canvas-container"></div>
+    <div class="container"></div>
+  </div>
     <script src="script.js"></script>
 </body>
 </html>
