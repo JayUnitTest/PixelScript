@@ -41,6 +41,8 @@ const isTouchDevice = () => {
 
 isTouchDevice(); 
 
+
+
 //grid 
 createGrid.addEventListener("click", () =>{
   container.innerHTML = "";
