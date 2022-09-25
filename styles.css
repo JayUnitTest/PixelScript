@@ -84,6 +84,12 @@ label{
     margin: 20px auto;
 }
 
+.container{
+    display: table;
+     margin: 0 auto;
+     padding-top: 2rem;
+}
+
 .gridColumn{
 border: 1px solid rgb(255, 255, 255); 
 height: 1em;
@@ -92,4 +98,5 @@ width: 1em;
 
 .gridRow{
     display: flex;
+    
 }
